@@ -506,7 +506,7 @@ export const ChatbotPage: React.FC = () => {
                     key={lang.code}
                     className={`flex items-center p-3 rounded-lg border cursor-pointer transition-colors ${
                       selectedLanguages.includes(lang.code)
-                        ? 'border-blue-500 bg-blue-50'
+                        ? 'border-gray-200 hover:bg-gray-50'
                         : 'border-gray-200 hover:bg-gray-50'
                     }`}
                   >

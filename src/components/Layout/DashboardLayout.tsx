@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import black_circle_360x360 from "../../assets/black_circle_360x360.png"
 import {
   LayoutDashboard,
   FileText,
@@ -53,7 +54,14 @@ export const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) =>
         >
           <div className="flex h-16 items-center justify-between px-6 border-b border-gray-200">
             <div className="flex items-center">
-              <Bot className="h-8 w-8 text-blue-600" />
+              <a href="https://bolt.new/" target="_blank" rel="noopener noreferrer">
+                <img 
+                  src={black_circle_360x360} 
+                  alt="ChatBot Builder Logo" 
+                  className="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12 rounded-full shadow-lg" 
+                />
+              </a>
+
               <span className="ml-2 text-xl font-bold text-gray-900">ChatBot Builder</span>
             </div>
             <button
@@ -111,7 +119,13 @@ export const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) =>
       <div className="hidden lg:fixed lg:inset-y-0 lg:flex lg:w-64 lg:flex-col">
         <div className="flex min-h-0 flex-1 flex-col bg-white border-r border-gray-200">
           <div className="flex h-16 items-center px-6 border-b border-gray-200">
-            <Bot className="h-8 w-8 text-blue-600" />
+ <a href="https://bolt.new/" target="_blank" rel="noopener noreferrer">
+                <img 
+                  src={black_circle_360x360} 
+                  alt="ChatBot Builder Logo" 
+                  className="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12 rounded-full shadow-lg" 
+                />
+              </a>            
             <span className="ml-2 text-xl font-bold text-gray-900">ChatBot Builder</span>
           </div>
           <nav className="flex-1 space-y-1 p-4">
